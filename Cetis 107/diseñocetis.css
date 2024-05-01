@@ -2,7 +2,46 @@ body{
     background-image: url(img/fondo.jpg);
     align-items: center;
     text-align: center;
+    margin: 0 auto;
 }
 #medida{
-    width: 970px; height: 360px;
+    width: 970px; 
+    height: 360px;
+}
+.center-img{
+    margin: 0 auto;
+}
+
+
+.izquierda{
+    margin-top: 1%;
+    margin-left: 16%;
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-top-left-radius: 10%;
+}
+.block-izq{
+    margin-top: 1%;
+    width: 200px;
+    height: 20px;
+    background-color: skyblue;
+    border-top-left-radius: 10%;
+}
+
+
+.centro{
+    margin-top: 1%;
+    margin-left: 110%;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+}
+
+.derecha{
+    margin-top: 1%;
+    margin-left: 104%;
+    width: 200px;
+    height: 300px;
+    background-color: white;
 }
