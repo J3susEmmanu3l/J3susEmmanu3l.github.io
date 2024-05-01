@@ -1,0 +1,8 @@
+body{
+    background-image: url(img/fondo.jpg);
+    align-items: center;
+    text-align: center;
+}
+#medida{
+    width: 970px; height: 360px;
+}
