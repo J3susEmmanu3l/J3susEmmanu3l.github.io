@@ -1,9 +1,14 @@
-body{
-    background-image: url();
+.especialidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* body{
     align-items: center;
     text-align: center;
     margin: 0 auto;
-}
+} */
 
 /* IMAGENES */
 #medida{
@@ -15,7 +20,7 @@ body{
 }
 
 /* Cuadro "Menu Principal" */
-.izquierda{
+/* .izquierda{
     margin-top: 1%;
     margin-left: 16%;
     width: 200px;
@@ -33,7 +38,7 @@ body{
     font-size: small;
     margin-top: 15px;
     
-}
+} */
 
 /* .centro{
     margin-top: 1%;
