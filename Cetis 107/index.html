@@ -5,6 +5,7 @@
     <title>CETis 107 - Sitio web escolar (Proyecto)</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="diseñocetis.css">
+    <script src="https://kit.fontawesome.com/14918331e9.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.7.1.js"></script>
 </head>
 <body>
@@ -25,13 +26,14 @@
   <!-- ENCABEZADO 2-->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
     <div class="container-fluid">
-      <img src="img/diseñocetis1.png"  width="500px" height="150px" style="margin-left: 5%;">
+      <img src="img/diseñocetis1.png"  width="34.9%" style="margin-left: 5%;">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 30%; margin-top: -10px;">
-        <form class="d-flex">
-          <button class="btn btn-outline-success" type="submit"><a href="https://cetis107.com.mx/preinscripciones/" style="text-decoration: none; color: green;">Preinscripciones</a></button>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <form class="d-flex" style="margin-right: 5%;">
+          <a class="btn btn-outline-success" href="https://cetis107.com.mx/preinscripciones/">Preinscripciones</a>
+          <a class="btn btn-outline-secondary" href="https://cetis107.edu.mx/alumnos/">Reinscripciones</a>
         </form>
       </div>
     </div>
@@ -171,6 +173,7 @@
     </div>
 </nav>
 
+
 <!-- IMAGENES EN MOVIMIENTO -->
  <div class="imagenesmov">
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -200,21 +203,36 @@
         <img src="img/genera8.png" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
  </div>
  <br><br>
+
+
  <!-- ESPECIALIDADES -->
 <div style="background-color: lightgray;">
   <div class="especialidades">
-    <div class="card" style="width: 18rem;">
+    <p>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseProgramacion" role="button" aria-expanded="false" aria-controls="collapseProgramacion">
+        Programación
+      </a>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseConstruccion" role="button" aria-expanded="false" aria-controls="collapseConstruccion">
+        Construccion
+      </a>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseElectronica" role="button" aria-expanded="false" aria-controls="collapseElectronica">
+        Electronica
+      </a>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseOfimatica" role="button" aria-expanded="false" aria-controls="collapseOfimatica">
+        Ofimatica
+      </a>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseDiseño" role="button" aria-expanded="false" aria-controls="collapseDiseño">
+        Diseño Grafico
+      </a>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseContabilidad" role="button" aria-expanded="false" aria-controls="collapseContabilidad">
+        Contabilidad
+      </a>
+    </p>
+    
+    <!-- <div class="card" style="width: 18rem;">
       <img src="img/LgProgra.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Programación</h5>
@@ -263,19 +281,154 @@
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
+    </div> -->
+  </div><div class="collapse" id="collapseProgramacion">
+      <div class="card card-body">
+        progra
+      </div>
     </div>
-  </div>
+    <div class="collapse" id="collapseConstruccion">
+      <div class="card card-body">
+        cosntru
+      </div>
+    </div>
+    <div class="collapse" id="collapseElectronica">
+      <div class="card card-body">
+        electro
+      </div>
+    </div>
+    <div class="collapse" id="collapseOfimatica">
+      <div class="card card-body">
+        ofi
+      </div>
+    </div>
+    <div class="collapse" id="collapseDiseño">
+      <div class="card card-body">
+        diseño
+      </div>
+    </div>
+    <div class="collapse" id="collapseContabilidad">
+      <div class="card card-body">
+        conta
+      </div>
+    </div>
 </div>
 <br><br>
+
+
+<!-- Actividades Extracurricurales -->
+<br><br>
+
+
 <!-- PIE DE PÁGINA -->
-<footer class="bg-dark fixed">
-  <div class="text-center p-2 container-fluid">
-    <p class="text-white">
-      José C. Valadez Sn, Infonavit Humaya, 80020 Culiacán Rosales, Sinaloa, México Tel: 7 750 9207 <br>
-      CENTRO DE ESTUDIOS TECNOLÓGICOS industrial y de servicios No.107 <br>
-      Copyright &copy CETis #107 2023-2024 <br></p>
-  </div>
-</footer>
+<div class="container my-5">
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: rgb(165, 13, 13);">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Información</h6>
+            <p>
+              <a class="text-white">MDBootstrap</a>
+            </p>
+            <p>
+              <a class="text-white">MDWordPress</a>
+            </p>
+            <p>
+              <a class="text-white">BrandFlow</a>
+            </p>
+            <p>
+              <a class="text-white" href="https://cetis107.edu.mx/portal/archivos/EscuelaSeguraMobileApp.apk">App Escuela Segura</a>
+            </p>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Useful links
+            </h6>
+            <p>
+              <a class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a class="text-white">Become an Affiliate</a>
+            </p>
+            <p>
+              <a class="text-white">Shipping Rates</a>
+            </p>
+            <p>
+              <a class="text-white">Help</a>
+            </p>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contáctanos</h6>
+            <p><i class="fas fa-home mr-3"></i><a href="https://maps.app.goo.gl/AdHmEwiwH2xpFMba6" class="text-white">José C. Valadez Sn, Infonavit Humaya, 80020 Culiacán Rosales, Sinaloa, México </a></p>
+            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> 7 750 9207</p>
+            <!-- <p><i class="fas fa-print mr-3"></i></p> -->
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright  y Redes-->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              &copy 2024 Copyright:
+              <a class="text-white" href="https://cetis107.edu.mx/portal" >CETis 107</a>
+            </div>
+          </div>
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Nuestras Redes Sociales</h6>
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" href="https://www.facebook.com/cetis107oficial"><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" href="https://twitter.com/cetis107oficial?lang=es"><i class="fab fa-twitter"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button" href="https://www.instagram.com/cetis107oficial/"><i class="fab fa-instagram"></i></a>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+</div>
+
+
   <script src="js/bootstrap.js"></script>
 </body>
 </html>
