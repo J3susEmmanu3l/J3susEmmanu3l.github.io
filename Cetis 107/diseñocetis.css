@@ -4,11 +4,6 @@
     align-items: center;
 }
 
-/* body{
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-} */
 
 /* IMAGENES */
 #medida{
@@ -20,52 +15,139 @@
 }
 
 .imgfo{
-    background-image: url(img/especia.png);
+    background-image: url(img/actividadesextracurriculares.png);
     background-repeat: no-repeat;
-    width: auto;
+    background-size: cover;
 }
 .transparent-box {
     margin-left: 5%;
-    width: 300px;
+    font-size: auto;
+    width: auto;
     height: 500px;
-    background-color: #928d8d; /* fondo negro */
+    background-color: #928d8d; /* fondo gris */
     opacity: 0.9; /* opacidad del 50% */
-    border: 1px solid #928d8d; /* borde negro */
+    border: 1px solid #928d8d; /* borde gris */
+}
+
+/* Act. Extracurriculares */
+
+.cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.actcur {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(165, 13, 13);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+   
+.actcur span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+   
+.actcur span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.actcur:hover span {
+    padding-right: 15px;
+}
+   
+.actcur:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartas {
+    width: 35%;
+    background: #928d8d;
+    padding: .4em;
+    border-radius: 6px;
+  }
+  
+  .cartas-imagenes {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .cartas-imagenes:hover {
+    transform: scale(0.98);
+  }
+  
+  .encabezado {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .encabezado:hover {
+    cursor: pointer;
   }
 
-/* Cuadro "Menu Principal" */
-/* .izquierda{
-    margin-top: 1%;
-    margin-left: 16%;
-    width: 200px;
-    height: 300px;
-    background-color: white;
-    border: 1px solid black;
-}
-.block-izq{
-    width: 99.9999%;
-    height: 30px;
-    background-color: skyblue;
-}
-.tam-letras{
-    text-align: left;
-    font-size: small;
-    margin-top: 15px;
-    
-} */
-
-/* .centro{
-    margin-top: 1%;
-    margin-left: 110%;
-    width: 500px;
-    height: 300px;
-    background-color: white;
-}
-
-.derecha{
-    margin-top: 1%;
-    margin-left: 104%;
-    width: 200px;
-    height: 300px;
-    background-color: white;
-} */
+  .botonact {
+    padding: 15px 30px;
+    border: 2px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  .botonact::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .botonact:hover::after {
+    transform: scale(4);
+  }
+  
+  .botonact:hover {
+    border-color: #666666;
+    background: #292929;
+  }
+  

@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="diseñocetis.css">
     <script src="https://kit.fontawesome.com/14918331e9.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#esconder").click(function(){
+          $("#div1").toggle();
+          $("#div2").toggle();
+        });
+        $("#difusioncult").click(function(){
+          $("#cultural").toggle();
+        });
+        $("#difusiondep").click(function(){
+          $("#deportiva").toggle();
+        });
+      });
+    </script>
 </head>
 <body>
   <!-- ENCABEZADO 1-->
@@ -49,13 +64,9 @@
                 Aspirantes
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Becas</a></li>
-                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Trámites</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item">Instalaciones</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Ubicación del Plantel</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -91,25 +102,15 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Programas</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Actividades <br> Extracurriculares</a></li>
-                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Servicio Social</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="#">Prácticas Profesionales</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a href="" class="dropdown-item">Normatividad <br> CETis #107</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a href="" class="dropdown-item">Becas</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a href="" class="dropdown-item">Horario de <br> Grupo</a></li>
-                <li><hr class="dropdown-divider"></li>
                 <li><a href="" class="dropdown-item">Asesorías <br> Académicas</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a href="" class="dropdown-item">Egresados Destacados</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a href="" class="dropdown-item">Nuevo Ingreso</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a href="" class="dropdown-item">APP Escuela <br> Segura</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -241,87 +242,46 @@
       </p>
       <div class="collapse" id="collapseProgramacion">
       <div class="card card-body">
-        Programación es una especilidad enfocada en la parte de TI, se toman los temas de Programación Basica,
-        Programación Movil, Programación Web, etc.
+        Programación ofrece las competencias profesionales que permiten al estudiante realizar actividades 
+        dirigidas a: analizar, diseñar, desarrollar , instalar y mantener software de aplicación tomando 
+        como base los requerimientos del usuario.
       </div>
       </div>
       <div class="collapse" id="collapseConstruccion">
         <div class="card card-body">
-          Construccion es una especilidad enfocada en la parte de la Basica de lo que es Arquitectura, se toma los
-          temas de lo que es
+          La carrera de Técnico en Construcción ofrece las competencias profesionales que permiten 
+          al estudiante realizar actividades dirigidas  a satisfacer la demanda actual de personal 
+          calificado capaz de supervisar, organizar y controlar la construcción de obras, de acuerdo 
+          con las necesidades del proyecto
         </div>
       </div>
       <div class="collapse" id="collapseElectronica">
         <div class="card card-body">
-          electro
+          Electrónica ofrece las competencias profesionales que permiten al estudiante
+          aplicar dispositivos y sistemas electrónicos compactos y eficientes, que están presentes en todos los
+          ámbitos del ser humano, requiere de técnicos en electrónica para operar, poner en marcha y mantener
+          toda la diversidad de sistemas electrónicos existentes de uso doméstico, comercial e industrial.
         </div>
       </div>
       <div class="collapse" id="collapseOfimatica">
         <div class="card card-body">
-          ofi
+          Ofimática es un grupo de métodos y programas (Word, PowerPoint, Excel, Outlook, entre otras). 
+          Estas dan la posibilidad de poder idealizar, hacer, gestionar o almacenar información. Se usan mucho con la idea de mejorar el rendimiento de las tareas vinculadas a la informática. 
         </div>
       </div>
       <div class="collapse" id="collapseDiseño">
         <div class="card card-body">
-          diseño
+          Diseño Gráfico ofrece un enfoque integral en el arte de la comunicación visual. A lo largo del programa,
+          adquirirás conocimientos en diseño de marca, tipografía, ilustración y medios digitales.
         </div>
       </div>
       <div class="collapse" id="collapseContabilidad">
         <div class="card card-body">
-          conta
+          Contabilidad es capaz de proporcionar información financiera para la toma de decisiones y pago de impuestos. 
+          Elaborar un registro manual y computarizado de las operaciones que realiza una empresa.
         </div>
       </div>
     </div>
-    <!-- <div class="card" style="width: 18rem;">
-      <img src="img/LgProgra.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Programación</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/LgProgra.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Construccion</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/LgProgra.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Electronica</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="especialidades">
-    <div class="card" style="width: 18rem;">
-      <img src="img/LgProgra.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Diseño Grafico</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/LgProgra.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Contabilidad</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/LgProgra.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Ofimatica</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div> -->
   </div>
 </div>
 <br><br>
@@ -329,22 +289,78 @@
 
 <!-- Actividades Extracurricurales -->
 <br><br>
-<div>
-  <div class="imgfo">
+<div class="imgfo">
+  <div class="cont">
     <div>
-      <div class="transparent-box" style="text-align: center;">
+      <div class="transparent-box" style="text-align: center; ">
         <br>
         <h2><strong>Actividades Extracurriculares</strong></h2><br><br><br>
-      <span>Cetis107 cuenta con actividades extracurriculares, cuenta con actividades deportivas y academicas
-        ,son abiertas a todo alumno y el tiempo aplicado en ellas son tiempo que se resta al Servicio Social
-      </span><br><br><br>
-      <button type="button" class="btn btn-danger"><pre>Acerca de ---></pre></button><br>
+        <span>
+          Cetis107 cuenta con actividades <br> extracurriculares, cuenta con actividades deportivas <br> y academicas
+          ,son abiertas a <br> todo alumno y el tiempo aplicado en ellas <br> son tiempo que se resta al Servicio Social
+        </span><br><br><br>
+        <button class="actcur" id="esconder">
+          <span>Acerca de</span>
+        </button>
       </div>
     </div>
+    <div>
+      <div id="div1" style="display:none; ">
+        <button class="botonact" id="difusioncult">Difusión Cultural</button>
+      </div>
+      <div id="cultural" style="display:none;">
+          <div id="center">
+            <div class="cartas">
+              <div class="cartas-imagenes"><img src="img/danza.jpeg" width="100%" height="100%"></div>
+              <div class="heading"> 
+                Danza
+              </div>
+            </div>
+            <div class="cartas">
+              <div class="cartas-imagenes"><img src="img/ajedrez.jpeg" width="100%" height="100%"></div>
+              <div class="heading"> 
+                Ajedrez
+            </div>
+          </div>
+          <div class="cartas">
+            <div class="cartas-imagenes"><img src="img/teatro.jpeg" width="100%" height="100%"></div>
+            <div class="heading"> 
+              Teatro
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="div2" style="display:none;">
+          <button class="botonact" id="difusiondep">Difusión Deportiva</button>
+        </div>
+        <div id="deportiva" style="display:none;">
+          <div id="center">
+            <div class="cartas">
+              <div class="cartas-imagenes"><img src="img/futbol.jpeg" width="100%" height="100%"></div>
+              <div class="heading"> 
+                Futbol
+              </div>
+            </div>
+            <div class="cartas">
+              <div class="cartas-imagenes"><img src="img/basquetbol.jpeg" width="100%" height="100%"></div>
+              <div class="heading"> 
+                Básquetbol
+              </div>
+            </div>
+            <div class="cartas">
+              <div class="cartas-imagenes"><img src="img/voleibol.jpeg" width="100%" height="100%"></div>
+              <div class="heading"> 
+                Vóleibol
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
 
-
+<br>
 <!-- PIE DE PÁGINA -->
 <div class="container my-5">
   <!-- Footer -->
@@ -358,13 +374,8 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">
-              Company name
+              CENTRO DE ESTUDIOS TECNOLOGICOS indsutriales y de servicios No. 107
             </h6>
-            <p>
-              Here you can use rows and columns to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
-            </p>
           </div>
 
           <hr class="w-100 clearfix d-md-none" />
@@ -373,13 +384,13 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Información</h6>
             <p>
-              <a class="text-white">MDBootstrap</a>
+              <a class="text-white" href="https://cetis107.edu.mx/portal/archivos/Privacidad%20Integral.pdf">Aviso de Privacidad</a>
             </p>
             <p>
-              <a class="text-white">MDWordPress</a>
+              <a class="text-white" href="https://cetis107.edu.mx/portal/archivos/Reglamento%20Escolar%20vigente%202023-2024-min.pdf">Reglamento Escolar</a>
             </p>
             <p>
-              <a class="text-white">BrandFlow</a>
+              <a class="text-white" href="http://www.becasmediasuperior.sep.gob.mx/">Becas</a>
             </p>
             <p>
               <a class="text-white" href="https://cetis107.edu.mx/portal/archivos/EscuelaSeguraMobileApp.apk">App Escuela Segura</a>
@@ -391,19 +402,19 @@
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">
-              Useful links
+              Más Información
             </h6>
             <p>
-              <a class="text-white">Your Account</a>
+              <a class="text-white" href="https://cetis107.edu.mx/portal/index.php?option=com_content&view=article&id=126&Itemid=192">Mensaje del Director</a>
             </p>
             <p>
-              <a class="text-white">Become an Affiliate</a>
+              <a class="text-white" href="https://cetis107.edu.mx/portal/archivos/MANUAL_OE.pdf">Orientación a Padres de Famila</a>
             </p>
             <p>
-              <a class="text-white">Shipping Rates</a>
+              <a class="text-white" href="https://cetis107.edu.mx/portal/index.php?option=com_content&view=article&id=129&Itemid=191">Nuestra Historia</a>
             </p>
             <p>
-              <a class="text-white">Help</a>
+              <a class="text-white" href="https://cetis107.edu.mx/portal/archivos/HorariosGRUPOS2024.pdf">Horarios Escolares</a>
             </p>
           </div>
 
@@ -413,8 +424,8 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contáctanos</h6>
             <p><i class="fas fa-home mr-3"></i><a href="https://maps.app.goo.gl/AdHmEwiwH2xpFMba6" class="text-white">José C. Valadez Sn, Infonavit Humaya, 80020 Culiacán Rosales, Sinaloa, México </a></p>
-            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
-            <p><i class="fas fa-phone mr-3"></i> 7 750 9207</p>
+            <!-- <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p> -->
+            <p><i class="fas fa-phone mr-3"></i>+52 667 750 9207</p>
             <!-- <p><i class="fas fa-print mr-3"></i></p> -->
           </div>
         </div>
