@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-05-2024 a las 03:01:18
+-- Tiempo de generación: 30-05-2024 a las 04:39:18
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `      spotify`
+-- Base de datos: `spotify`
 --
 
 -- --------------------------------------------------------
@@ -83,6 +83,18 @@ CREATE TABLE `generos` (
   `id` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Volcado de datos para la tabla `generos`
+--
+
+INSERT INTO `generos` (`id`, `nombre`) VALUES
+(1, 'Regional Mexicano'),
+(2, 'Kpop'),
+(3, 'Bachata'),
+(4, 'Reggaetón'),
+(5, 'Trap Latino'),
+(6, 'Pop Latino');
 
 -- --------------------------------------------------------
 
@@ -238,7 +250,7 @@ ALTER TABLE `favoritos`
 -- AUTO_INCREMENT de la tabla `generos`
 --
 ALTER TABLE `generos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `membresias`
