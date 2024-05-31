@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-05-2024 a las 04:39:18
+-- Tiempo de generación: 31-05-2024 a las 02:33:36
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -30,8 +30,24 @@ SET time_zone = "+00:00";
 CREATE TABLE `artista` (
   `id` int(11) NOT NULL,
   `nombre` varchar(150) NOT NULL,
-  `descripcion` varchar(300) NOT NULL
+  `descripcion` varchar(400) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Volcado de datos para la tabla `artista`
+--
+
+INSERT INTO `artista` (`id`, `nombre`, `descripcion`) VALUES
+(1, 'Bizarrap', 'Es un productor argentino, uno de los máximos referentes de la música urbana en español actual y de la escena de trap latinoamericana.'),
+(2, 'Milo J', 'Es un cantante y compositor argentino de rhythm and blues latino, trap latino y easy listening.'),
+(3, 'BadBunny', 'Es un intérprete y compositor de música urbana puertorriqueño. Se le considera uno de los principales nombres del panorama actual del rap, trap y reguetón en español.'),
+(4, 'Danny Lux', 'Comenzó su carrera compartiendo videos cómicos en TikTok, pero un día decidió entonar una canción regional mexicana mientras tocaba la guitarra, lo que lo catapultó a la fama en línea.'),
+(5, 'Natanael Cano', 'es el pionero de los corridos tumbados. Natanael Cano habla por un género, una generación y un país que, como su música, ha sido ampliamente influenciado por elementos externos.'),
+(6, 'StrayKids', 'La agrupación actualmente se compone de 8 miembros: Lee Know, Han, I.N, Felix, Bangchan, Hyunjin, Seungmin, y Changbin.'),
+(7, 'Enanitos Verdes', 'Es la banda que nacio en la ciudad de Mendoza , Argentina, en noviembre de 1979. Integrada por Marciano Cantero en voz y bajo Felipe Staiti en guitarra y Daniel Piccolo en batería.'),
+(8, 'Romeo Santos', 'Es un cantante de bachata que nació el 21 de julio de 1981 en el barrio Bronx de Nueva York.'),
+(9, 'Sebastian Yatra', 'Es un galardonado artista multi platino que ha liderado las listas globales con sus sencillos que le han dado un giro al género alcanzando 16 billones de reproducciones y más de 21 millones de oyentes mensuales en Spotify,'),
+(10, 'Kendrick Lamar', 'La Trayectoria Brillante de un Icono del Hip-Hop. Nacido el 17 de junio de 1987 en Compton, California, Kendrick Lamar ha emergido como un titán en la escena del hip-hop, llevando sus rolas a nuevas ligas con una mezcla única de lírica aguda y conciencia social.');
 
 -- --------------------------------------------------------
 
@@ -94,7 +110,9 @@ INSERT INTO `generos` (`id`, `nombre`) VALUES
 (3, 'Bachata'),
 (4, 'Reggaetón'),
 (5, 'Trap Latino'),
-(6, 'Pop Latino');
+(6, 'Pop Latino'),
+(7, 'Hip Hop'),
+(8, 'Rock Latino');
 
 -- --------------------------------------------------------
 
@@ -104,9 +122,19 @@ INSERT INTO `generos` (`id`, `nombre`) VALUES
 
 CREATE TABLE `membresias` (
   `id` int(11) NOT NULL,
-  `descripcion` varchar(100) NOT NULL,
+  `descripcion` varchar(500) NOT NULL,
   `precio` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Volcado de datos para la tabla `membresias`
+--
+
+INSERT INTO `membresias` (`id`, `descripcion`, `precio`) VALUES
+(1, 'Spotify Premium Individual\r\n\r\n-1 cuenta Premium\r\n-Cancela en cualquier momento\r\n-Suscripción o un pago único', 129),
+(2, 'Spotify Premium Dúo\r\n\r\n-2 cuentas Premium\r\n-Cancela en cualquier momento\r\n-Suscripción o un pago único', 169),
+(3, 'Spotify Premium Familiar\r\n\r\n-Hasta 6 cuentas Kids o Premium\r\n-Controla el contenido marcado como explícito.\r\n-Acceso a Spotify Kids\r\n-Cancela en cualquier momento\r\n-Suscripción o un pago único', 199),
+(4, 'Spotify Free\r\n\r\n', 0);
 
 -- --------------------------------------------------------
 
@@ -149,6 +177,22 @@ CREATE TABLE `usuarios` (
   `correo` varchar(150) NOT NULL,
   `memb_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `memb_id`) VALUES
+(1, 'Weriche', 'weriche@gmail.com', 1),
+(2, 'Greñas', 'greñitas@gmail.com', 4),
+(3, 'reidy', 'jijija123@gmail.com', 3),
+(4, 'vixy', 'carlsjr@gmail.com', 3),
+(5, 'Merry', 'merry@gmail.com', 1),
+(6, 'Logitech', 'android@gmail.com', 2),
+(7, 'Shoyo', 'uncorreoxd@gmail.com', 4),
+(8, 'Achel', 'acheluwukawai@gmail.com', 3),
+(9, 'macos', 'maquinos123@gmail.com', 3),
+(10, 'omal', 'omaroki@gmail.com', 1);
 
 --
 -- Índices para tablas volcadas
@@ -226,7 +270,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `artista`
 --
 ALTER TABLE `artista`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `artista_canciones`
@@ -250,13 +294,13 @@ ALTER TABLE `favoritos`
 -- AUTO_INCREMENT de la tabla `generos`
 --
 ALTER TABLE `generos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `membresias`
 --
 ALTER TABLE `membresias`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `playlist`
@@ -274,7 +318,7 @@ ALTER TABLE `playlist_canciones`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Restricciones para tablas volcadas
