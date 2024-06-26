@@ -60,9 +60,9 @@
                 <img src="img/" alt="" class="img-fluid">
             </div>
             <div class="col">
-                <h6></h6>
+                <h6>SELECT alumno.nombre, asignatura.nombre, profesor.nombre, curso.nombreDescriptivo FROM alumno INNER JOIN matricula ON alumno.idAlumno=matricula.idAlumno INNER JOIN asignatura ON matricula.idAsignatura=asignatura.idAsignatura INNER JOIN impartir ON impartir.idAsignatura=asignatura.idAsignatura INNER JOIN profesor ON impartir.idProfesor=profesor.idProfesor INNER JOIN curso ON curso.idCurso=asignatura.curso</h6>
                 <p>Consulta 10. Obtener el listado de alumnos con asignaturas que cursa, profesor que le imparte y curso al que pertenece.</p>
-                <img src="img/" alt="" class="img-fluid">
+                <img src="img/consulta10.png" alt="" class="img-fluid">
             </div>
         </div>
     </div>
