@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica #1. Envio de datos con PHP</title>
+</head>
+<body>
+    <h1>Envío de datos con PHP</h1>
+    <h2>Jesus Emmanuel Ruiz Lopez 11/09/2024</h2>
+    <form action="practica1.php" method="get">
+        <label for="">Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <br><br>
+
+        <label for="">Edad:</label>
+        <input type="text" name="edad" required>
+
+        <br><br>
+
+        <label for="">Escuela</label>
+        <select name="escuela" id="" require>
+            <option value="">Seleccione una Escuela</option>
+            <option value="CETis 107">CETis 107</option>
+            <option value="UAS">UAS</option>
+            <option value="COBAES">COBAES</option>
+        </select>
+
+        <br><br>
+
+        <label for="">Sexo:</label>
+        <input type="radio" name="sexo" value="Masculino">Masculino
+        <input type="radio" name="sexo" value="Femenino">Femenino
+        <input type="radio" name="sexo" value="Otro">Otro
+
+        <br><br>
+
+        <label for="">Fecha de Nacimiento</label>
+        <input type="date" name="nacimiento">
+
+        <br><br>
+        <input type="submit" value="Enviar Datos">
+    </form>
+</body>
+</html>
