@@ -12,7 +12,7 @@
         <form action="practica4.php" method="post">
             <div class="row">
                 <h1>Exámen de MINECRAFT</h1>
-                <div class="card">
+                <div class="card p-3 mb-4">
                     <div class="card-header">
                       1.-¿Quién es el creador de MINECRAFT?
                     </div>
@@ -22,7 +22,7 @@
                       <p class="card-text"><input type="radio" name="pregunta1" value="Microsoft" required>Microsoft</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card p-3 mb-4">
                     <div class="card-header">
                       2.-¿Qué recursos ocupas para crearte una espada de hierro en Minecraft? (Escoge 2 opciones)
                     </div>
@@ -33,13 +33,77 @@
                       <p class="card-text"><input type="checkbox" name="pregunta2[]" value="Netherite" >Netherite</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card p-3 mb-4">
                     <div class="card-body">
-                        3.-La <input type="text" name="pregunta3"> es un objeto en Minecraft que permite al jugador teletransportarse a una ubicación cercana al lanzarla.
+                        3.-La <input type="text" name="pregunta3" required> es un objeto en Minecraft que permite al jugador teletransportarse a una ubicación cercana al lanzarla.
+                    </div>
+                </div>
+                
+                <div class="card p-3 mb-4">
+                    <div class="card-header">
+                      4.-¿Qué animal suelta lana cuando lo esquilas o matas?
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><input type="radio" name="pregunta4" value="Vaca" required>Vaca</p>
+                      <p class="card-text"><input type="radio" name="pregunta4" value="Gato" required>Gato</p>
+                      <p class="card-text"><input type="radio" name="pregunta4" value="Oveja" required>Oveja</p>
+                      <p class="card-text"><input type="radio" name="pregunta4" value="Lobo" required>Lobo</p>
+                    </div>
+                </div>
+                <div class="card p-3 mb-4">
+                    <div class="card-body">
+                        5.-¿En qué año se lanzó la primera versión pública de Minecraft?<input type="text" name="pregunta5" required>
+                    </div>
+                </div>
+                <div class="card p-3 mb-4">
+                    <div class="card-header">
+                      6.-¿Cuál es el material más resistente en Minecraft para hacer herramientas y armaduras?
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><input type="radio" name="pregunta6" value="Netherita" required>Netherita</p>
+                      <p class="card-text"><input type="radio" name="pregunta6" value="Hierro" required>Hierro</p>
+                      <p class="card-text"><input type="radio" name="pregunta6" value="Diamante" required>Diamante</p>
+                      <p class="card-text"><input type="radio" name="pregunta6" value="Oro" required>Oro</p>
+                    </div>
+                </div>
+                <div class="card p-3 mb-4">
+                    <div class="card-body">
+                        7.-¿Cuál es el BOSS con 3 cabezas?<input type="text" name="pregunta7">
+                    </div>
+                </div>
+                <div class="card p-3 mb-4">
+                    <div class="card-header">
+                      8.-¿Cuál es el BOSS FINAL?
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><input type="radio" name="pregunta8" value="Warden" required>Warden</p>
+                      <p class="card-text"><input type="radio" name="pregunta8" value="Ender Dragon" required>Ender Dragon</p>
+                      <p class="card-text"><input type="radio" name="pregunta8" value="Wither" required>Wither</p>
+                    </div>
+                </div>
+                <div class="card p-3 mb-4">
+                    <div class="card-header">
+                      9.-¿De qué dimesión pertenecen los Piglins?
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><input type="radio" name="pregunta9" value="END" required>END</p>
+                      <p class="card-text"><input type="radio" name="pregunta9" value="Ancient City" required>Ancient City</p>
+                      <p class="card-text"><input type="radio" name="pregunta9" value="Nether" required>Nether</p>
+                    </div>
+                </div>
+                <div class="card p-3 mb-4">
+                    <div class="card-header">
+                      10.-¿Qué criatura suelta la Ender Pearl al eliminarla?
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text"><input type="radio" name="pregunta10" value="Creeper" required>Creeper</p>
+                      <p class="card-text"><input type="radio" name="pregunta10" value="Zombie" required>Zombie</p>
+                      <p class="card-text"><input type="radio" name="pregunta10" value="Enderman" required>Enderman</p>
+                      <p class="card-text"><input type="radio" name="pregunta10" value="Esqueleto Wither" required>Esqueleto Wither</p>
                     </div>
                 </div>
             </div>
-            <input type="submit" value="Terminar Examen">
+            <br><br><input type="submit" value="Terminar Examen">
         </form>
     </div>
     <script src="js/bootstrap.js"></script> 
