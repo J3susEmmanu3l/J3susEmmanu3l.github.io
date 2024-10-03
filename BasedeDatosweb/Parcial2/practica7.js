@@ -47,10 +47,10 @@ function validar(posicion){
                     pintar(3,2,1);
                 }else if (cuadro3 == cuadro6 && cuadro3 == cuadro9) {
                     console.log("GANADOR ---> "+cuadro3)
-                    pintar(2,5,7);
-                }else if (cuadro3 == cuadro6 && cuadro3 == cuadro7) {
-                    console.log("GANADOR ---> "+cuadro3)
                     pintar(3,6,9);
+                }else if (cuadro3 == cuadro5 && cuadro3 == cuadro7) {
+                    console.log("GANADOR ---> "+cuadro3)
+                    pintar(3,5,7);
                 }
                 break;
                 
@@ -107,9 +107,9 @@ function validar(posicion){
                 if (cuadro8 == cuadro7 && cuadro8 == cuadro9) {
                     console.log("GANADOR ---> "+cuadro8)
                     pintar(8,7,9);
-                }else if (cuadro8 == cuadro5 && cuadro8 == cuadro3) {
+                }else if (cuadro8 == cuadro5 && cuadro8 == cuadro2) {
                     console.log("GANADOR ---> "+cuadro8)
-                    pintar(8,5,3);
+                    pintar(8,5,2);
                 }
                 break;
 
